@@ -1,0 +1,42 @@
+[
+  {
+    "id": "task_mr1w5hjh5lfh",
+    "title": "Build API routing layers",
+    "description": "Implement backend routing and Express middlewares.",
+    "status": "completed",
+    "priority": "high",
+    "dueDate": "2026-07-02T00:00:00.000Z",
+    "createdAt": "2026-07-01T09:46:43.085Z",
+    "updatedAt": "2026-07-01T09:46:43.085Z"
+  },
+  {
+    "id": "task_mr1w6rfuvi0l",
+    "title": "Design database schemas",
+    "description": "Write Mongoose schemas and integrate with fallback storage.",
+    "status": "completed",
+    "priority": "medium",
+    "dueDate": "2026-07-01T00:00:00.000Z",
+    "createdAt": "2026-07-01T09:47:42.570Z",
+    "updatedAt": "2026-07-01T09:47:42.570Z"
+  },
+  {
+    "id": "task_mr1w84mzf7mh",
+    "title": "Create custom Vanilla CSS system",
+    "description": "Define colors, glassmorphism templates, and theme toggles.",
+    "status": "in-progress",
+    "priority": "high",
+    "dueDate": "2026-07-05T00:00:00.000Z",
+    "createdAt": "2026-07-01T09:48:46.331Z",
+    "updatedAt": "2026-07-01T09:48:46.331Z"
+  },
+  {
+    "id": "task_mr1w98sy8nmr",
+    "title": "Verify cross-origin configurations",
+    "description": "Test headers and API request methods.",
+    "status": "pending",
+    "priority": "low",
+    "dueDate": "2026-07-10T00:00:00.000Z",
+    "createdAt": "2026-07-01T09:49:38.386Z",
+    "updatedAt": "2026-07-01T09:49:38.386Z"
+  }
+]

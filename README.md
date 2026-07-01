@@ -4,6 +4,12 @@ TaskFlow is a modern, highly responsive, and visually stunning Task Tracker Web 
 
 It features an elegant Kanban Board and a structured List View, comprehensive task statistics, robust form validations, inline toast notifications, and full-featured query filtering/sorting.
 
+## 🎨 Interface Showcase
+
+| Kanban Board (Dark Mode) | List View (Light Mode - Filtered) |
+|:---:|:---:|
+| ![Kanban Board - Dark Mode](images/dark_board.png) | ![List View - Light Mode](images/light_list.png) |
+
 ---
 
 ## ⚡ Key Features
