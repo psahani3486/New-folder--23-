@@ -1,6 +1,9 @@
 import express from 'express';
 import cors from 'cors';
 import dotenv from 'dotenv';
+import path from 'path';
+import fs from 'fs';
+import { fileURLToPath } from 'url';
 import { connectDB } from './config/db.js';
 import taskRoutes from './routes/taskRoutes.js';
 
@@ -36,10 +39,22 @@ app.use('/api/*', (req, res) => {
   res.status(404).json({ message: `API Endpoint ${req.originalUrl} Not Found` });
 });
 
-// Serve static assets in production if needed, or simple status message for root
-app.get('/', (req, res) => {
-  res.send('MERN Task Tracker API is running...');
-});
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = path.dirname(__filename);
+
+// Serve static assets in production if dist folder is available
+const distPath = path.join(__dirname, '..', 'frontend', 'dist');
+if (fs.existsSync(distPath)) {
+  app.use(express.static(distPath));
+  // Serve the index.html for all frontend routes
+  app.get('*', (req, res) => {
+    res.sendFile(path.join(distPath, 'index.html'));
+  });
+} else {
+  app.get('/', (req, res) => {
+    res.send('MERN Task Tracker API is running...');
+  });
+}
 
 // Error handling middleware
 app.use((err, req, res, next) => {
